@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)http://127.0.0.1:5500/html%20problem%20solving%20and%20projects/project1.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal profile page</title>
+</head>
+<body>
+    <h1>PERSONAL PROFILE</h1>
+    <div><label for="name">ENTER YOUR NAME:</label>
+        <input type="text" id="name" name="myname">
+    </div>
+    <br>
+    <div><label for="email">email</label>
+        <input type="email" id="email" name="myemail">
+    </div>
+    <br>
+    <div><label for="mob no.">ENTER MOBILE NUMBER</label>
+        <input type="number" id="mob no." name="mynumber">
+
+    </div>
+    <br>
+    <p>WRITE ABOUT YOURSELF:</p>
+    <div><label for="aboutyourself"></label>
+        <textarea name="aboutyourself" id="aboutyourself" cols="30" rows="10"></textarea>
+    </div>
+    <br>
+    <div><label for="skills">SELECT YOUR SKILLS:</label>
+        <select name="skills" id="skills">
+            <option value="Programming">Programming</option>
+            <option value="Designing">Designing</option>
+            <option value="Communication">Communication</option>
+            <option value="management">Management</option>
+            <option value="Leadership">Leadership</option>
+            </select>
+    </div>
+    <br>
+    <div><label for="userfile">UPLOAD YOUR ID :</label>
+        <input type="file" id="userfile" name="userfile">
+    </div>
+    <br>
+    <div>Submit your details:
+        <input type="submit" value="SUBMIT HERE">
+    </div>
+
+    
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
